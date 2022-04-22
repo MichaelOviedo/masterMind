@@ -19,14 +19,14 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class masterMind {
     public static void main(String[] args){
     
-        JFrame juego = new JFrame();
-        juego.setSize(new Dimension(500,500));
-        juego.setTitle("MasterMind");
-        juego.setPreferredSize(new Dimension(500,500));
-        juego.setLocationRelativeTo(null);
-        juego.setMinimumSize(new Dimension(300,300));
-        juego.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        juego.setVisible(true);
+        JFrame appFrame = new JFrame();
+        appFrame.setSize(new Dimension(500,500));
+        appFrame.setTitle("MasterMind");
+        appFrame.setPreferredSize(new Dimension(500,500));
+        appFrame.setLocationRelativeTo(null);
+        appFrame.setMinimumSize(new Dimension(300,300));
+        appFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        appFrame.setVisible(true);
 
         
         JPanel panel = new JPanel();
@@ -35,7 +35,7 @@ public class masterMind {
         panel.setBackground(new Color(120, 120, 120));
         panel.setLayout(null);
         
-        juego.add(panel);
+        appFrame.add(panel);
     
         JButton boton = new JButton();
         boton.setText("Enviar");
